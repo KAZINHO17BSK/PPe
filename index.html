@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>LS_PHOTO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="fotos, imagens, beleza, natureza, mundo, lugares, paisagens">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MENU</h1>
+        <h2>LS Fotos</h2>
+        <button id="loginBtn">Login</button>
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <form id="loginForm" action="./Login/login.php" method="post">
+      <label for="phone">Telefone:</label>
+      <input type="text" id="phone" name="phone" required>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+      <div class="buttons">
+        <button type="button" id="cancelBtn">Cancelar</button>
+        <button type="submit">Entrar</button>
+      </div>
+    </form>
+  </div>
+</div>
+    </header>
+    <main>
+        <section>
+            <figure class="fotografias">
+                <a href="./img/Itália.jpg">
+                  <img src="./img/Itália.jpg" alt="Itália" data-title="Descubra as belezas da Itália!">
+                  <figcaption>
+                    <h1>Itália</h1>
+                  </figcaption>
+                  </a>
+                  <div class="imagem-container" id="imagemContainer">
+                    <button class="botao-curtir" id="botaoCurtir" onclick="curtir()">❤️</button>
+              </figure>
+              <figure class="fotografias">
+                <a href="./img/oceano_da_califórnia.jpg">
+                    <img src="./img/oceano_da_califórnia.jpg" alt="Oceano da Califórnia">
+                    <figcaption>
+                        <h1>Oceano da Califórnia</h1>
+                    </figcaption>
+                </a>
+                <div class="imagem-container" id="imagemContainer">
+                  <button class="botao-curtir" id="botaoCurtir" onclick="curtir()">❤️</button>
+            </figure>   
+
+            <figure class="fotografias">
+                <a href="./img/lago2.jpg">
+                    <img src="./img/lago2.jpg" alt="Lago2">
+                    <figcaption>
+                        <h1>Lago 2</h1>
+                    </figcaption>
+                </a>
+                <div class="imagem-container" id="imagemContainer">
+                  <button class="botao-curtir" id="botaoCurtir" onclick="curtir()">❤️</button>
+            </figure>
+
+            <figure class="fotografias">
+                <a href="./img/alaska.jpg">
+                    <img src="./img/alaska.jpg" alt="Alaska">
+                    <figcaption>
+                        <h1> Alaska</h1>
+                    </figcaption>
+                </a>
+                <div class="imagem-container" id="imagemContainer">
+                  <button class="botao-curtir" id="botaoCurtir" onclick="curtir()">❤️</button>
+            </figure>
+
+            <figure class="fotografias">
+                <a href="./img/parque_denali.jpg">
+                    <img src="./img/parque_denali.jpg" alt="Parque Denali">
+                    <figcaption>
+                        <h1>Parque Nacional de Denali</h1>
+                    </figcaption>
+                </a>
+                <div class="imagem-container" id="imagemContainer">
+                  <button class="botao-curtir" id="botaoCurtir" onclick="curtir()">❤️</button>
+            </figure>
+
+            <figure class="fotografias">
+                <a href="./img/lago.jpg">
+                    <img src="./img/lago.jpg" alt="Lago">
+                    <figcaption>
+                        <h1>Lago</h1>
+                    </figcaption>
+                </a>
+                <div class="imagem-container" id="imagemContainer">
+                  <button class="botao-curtir" id="botaoCurtir" onclick="curtir()">❤️</button>
+            </figure>
+
+            <figure class="fotografias">
+                <a href="./img/escócia.jpg">
+                    <img src="./img/escócia.jpg" alt="Escócia">
+                    <figcaption>
+                        <h1>Escócia</h1>
+                    </figcaption>
+                </a>
+                <div class="imagem-container" id="imagemContainer">
+                  <button class="botao-curtir" id="botaoCurtir" onclick="curtir()">❤️</button>
+            </figure>
+
+            <figure class="fotografias">
+                <a href="./img/montanhoso.jpg">
+                    <img src="./img/montanhoso.jpg" alt="Montanhoso">
+                    <figcaption>
+                        <h1>Montanhoso</h1>
+                    </figcaption>
+                </a>
+                <div class="imagem-container" id="imagemContainer">
+                  <button class="botao-curtir" id="botaoCurtir" onclick="curtir()">❤️</button>
+            </figure>
+
+            <figure class="fotografias">
+                <a href="./img/montanhas.jpg">
+                    <img src="./img/montanhas.jpg" alt="Montanhas">
+                    <figcaption>
+                        <h1>Montanhas</h1>
+                    </figcaption>
+                </a>
+                <div class="imagem-container" id="imagemContainer">
+                  <button class="botao-curtir" id="botaoCurtir" onclick="curtir()">❤️</button>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024, Desenvolvido por <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIxmNxJU8NO4D0bV6jSy9I7rtjimbHTufSUZl8Ie5UuwRYM_jBHHBXoKzcyOKHnFNWyfg&usqp=CAU" target="_blank">P&D</a>.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
